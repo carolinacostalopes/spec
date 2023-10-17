@@ -8,6 +8,11 @@ paths:
         summary: Retrieves examples
         responses:
           200: 
-            description: "get examples"
-            schema:
-              type: boolean
+            $ref: "#/components/responses/success"
+
+components:
+  responses:
+    success:
+      description: "get examples"
+      schema:
+        type: boolean
