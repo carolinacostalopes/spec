@@ -13,7 +13,14 @@ paths:
 components:
   responses:
     success:
-      description: "get examples"
+      description: "get some examples"
+      headers: 
+        API-Version:
+          description: indicates the version
+          schema:
+            description: versioning
+            type: string
+            pattern: "^apiversion"
       content:
         application/vnd.api+json:
         schema:
