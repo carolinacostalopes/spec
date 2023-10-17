@@ -1,0 +1,9 @@
+openapi: 3.0.0
+
+components:
+  responses:
+    success:
+      content:
+        application/vnd.api+json:
+          schema:
+            type: boolean
