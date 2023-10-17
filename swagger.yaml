@@ -8,12 +8,6 @@ paths:
         summary: Retrieves examples
         responses:
           200: 
-              $ref: "#/components/responses/success"
-
-components:
-  responses:
-    success:
-      content:
-        application/vnd.api+json:
-          schema:
-            type: boolean
+            description: "get examples"
+            schema:
+              type: boolean
