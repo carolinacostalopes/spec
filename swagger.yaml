@@ -14,5 +14,7 @@ components:
   responses:
     success:
       description: "get examples"
-      schema:
-        type: boolean
+      content:
+        application/vnd.api+json:
+        schema:
+          type: boolean
