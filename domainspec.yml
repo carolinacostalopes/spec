@@ -1,0 +1,11 @@
+openapi: 3.0.0
+
+components:
+  parameters:
+    id:
+      name: id
+      in: query
+      style: simple
+      schema:
+        type: string
+        format: uuid
