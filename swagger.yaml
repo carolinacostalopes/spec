@@ -6,6 +6,6 @@ paths:
   "/example":
       get:
         summary: Retrieves examples
-      responses:
-        "200": 
-          $ref: "./otherdomainspec.yml#/responses/success"
+        responses:
+          "200": 
+            $ref: "./otherdomainspec.yml#/responses/success"
