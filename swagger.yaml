@@ -4,10 +4,10 @@ info:
 
 paths:
   "/example"
-  parameters:
-    - $ref: "./domainspec.yml#/components/parameters/id"
-  get:
-    summary: Retrieves examples
-  responses:
-    "200": 
-      $ref: "./otherdomainspec.yml#/responses/success"
+    parameters:
+      - $ref: "./domainspec.yml#/components/parameters/id"
+    get:
+      summary: Retrieves examples
+    responses:
+      "200": 
+        $ref: "./otherdomainspec.yml#/responses/success"
