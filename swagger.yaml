@@ -8,20 +8,4 @@ paths:
         summary: Retrieves examples
         responses:
           200: 
-            $ref: "#/components/responses/success"
-
-components:
-  responses:
-    success:
-      description: "get some examples"
-      headers: 
-        API-Version:
-          description: indicates the version
-          schema:
-            description: versioning
-            type: string
-            pattern: "^apiversion"
-      content:
-        application/vnd.api+json:
-          schema:
-            type: boolean
+            $ref: "./domainspec.yml#/components/responses/success"
