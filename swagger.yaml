@@ -23,5 +23,5 @@ components:
             pattern: "^apiversion"
       content:
         application/vnd.api+json:
-        schema:
-          type: boolean
+          schema:
+            type: boolean
