@@ -8,4 +8,4 @@ paths:
         summary: Retrieves examples
         responses:
           200: 
-            $ref: "./domainspec.yml#/components/responses/success"
+            $ref: "./otherdomainspec.yml#/components/responses/success"
