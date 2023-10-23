@@ -3,7 +3,7 @@ info:
   version: 1.0.0
 
 paths:
-  "/example":
+  "/example/{id}":
     parameters:
     - $ref: "./domainspec.yml#/components/parameters/id"
     get:
@@ -11,3 +11,11 @@ paths:
       responses:
         200: 
           $ref: "./otherdomainspec.yml#/components/responses/success"
+  "/example/collection":
+    parameters:
+    - $ref: "./domainspec.yml#/components/parameters/id"
+    get:
+      summary: Retrieves examples
+      responses:
+        200: 
+          $ref: "./otherdomainspec.yml#/components/responses/success-collection"

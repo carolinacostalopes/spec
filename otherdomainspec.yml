@@ -15,3 +15,39 @@ components:
         application/vnd.api+json:
           schema:
             type: boolean
+    success-collection:
+      description: collection response
+      headers:
+        API-Version:
+          description: indicates the Semantic Version that responds to the request
+          schema:
+            $ref: 'domainspec.yml#/components/schemas/version'
+      content:
+        application/vnd.api+json:
+          schema:
+            allOf:
+              - $ref: 'domainspec.yml#/components/schemas/links'
+              - $ref: '#/components/schemas/collection'
+
+  schemas:
+    collection:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/identifier"
+
+    identifier:
+      properties:
+        id:
+          type: string
+          minLength: 36
+          maxLength: 36
+          format: uuid
+        type:
+          type: string
+          maxLength: 64
+          example: "examples"
+          pattern: "^examples"

@@ -11,3 +11,21 @@ components:
       schema:
         type: string
         format: uuid
+
+  schemas:
+    links:
+      type: object
+      properties:
+        first:
+          type: string
+          format: uri
+          maxLength: 256
+        last:
+          type: string
+          format: uri
+          maxLength: 256
+    
+    version:
+      description: Semantic Version
+      type: string
+      pattern: '^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$'
