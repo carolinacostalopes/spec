@@ -6,7 +6,6 @@ window.onload = function() {
     urls: [
       {url: "swagger.yaml", name: "Version One"},
       {url: "swaggerv2.yaml", name: "Version Two"},
-      {url: "swaggerasync.yaml", name: "Async API"},
     ],
     dom_id: '#swagger-ui',
     deepLinking: true,
@@ -15,9 +14,7 @@ window.onload = function() {
       SwaggerUIStandalonePreset
     ],
     plugins: [
-      SwaggerUIBundle.plugins.DownloadUrl,
-      EditorPreviewAsyncAPIPlugin,
-      SwaggerUIAdapterPlugin,
+      SwaggerUIBundle.plugins.DownloadUrl
     ],
     layout: "StandaloneLayout"
   });
