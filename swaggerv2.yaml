@@ -1,0 +1,13 @@
+openapi: 3.0.0
+info:
+  version: 2.0.0
+
+paths:
+  "/example/{id}":
+    parameters:
+    - $ref: "./shared-domain.yml#/components/parameters/id"
+    get:
+      summary: Retrieves examples
+      responses:
+        200: 
+          $ref: "./specific-domain.yml#/components/responses/success"
