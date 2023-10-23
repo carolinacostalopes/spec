@@ -5,17 +5,17 @@ info:
 paths:
   "/example/{id}":
     parameters:
-    - $ref: "./domainspec.yml#/components/parameters/id"
+    - $ref: "./shared-domain.yml#/components/parameters/id"
     get:
       summary: Retrieves examples
       responses:
         200: 
-          $ref: "./otherdomainspec.yml#/components/responses/success"
+          $ref: "./specific-domain.yml#/components/responses/success"
   "/example/collection":
     parameters:
-    - $ref: "./domainspec.yml#/components/parameters/id"
+    - $ref: "./shared-domain.yml#/components/parameters/id"
     get:
       summary: Retrieves examples
       responses:
         200: 
-          $ref: "./otherdomainspec.yml#/components/responses/success-collection"
+          $ref: "./specific-domain.yml#/components/responses/success-collection"

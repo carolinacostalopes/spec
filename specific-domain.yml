@@ -21,12 +21,12 @@ components:
         API-Version:
           description: indicates the Semantic Version that responds to the request
           schema:
-            $ref: 'domainspec.yml#/components/schemas/version'
+            $ref: 'shared-domain.yml#/components/schemas/version'
       content:
         application/vnd.api+json:
           schema:
             allOf:
-              - $ref: 'domainspec.yml#/components/schemas/links'
+              - $ref: 'shared-domain.yml#/components/schemas/links'
               - $ref: '#/components/schemas/collection'
 
   schemas:
