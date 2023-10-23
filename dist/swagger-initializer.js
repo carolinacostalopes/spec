@@ -16,8 +16,6 @@ window.onload = function() {
     ],
     plugins: [
       SwaggerUIBundle.plugins.DownloadUrl,
-      EditorPreviewAsyncAPIPlugin,
-      SwaggerUIAdapterPlugin,
     ],
     layout: "StandaloneLayout"
   });
